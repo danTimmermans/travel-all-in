@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -126,7 +126,7 @@ a {
 // section offres
 #offres {
   .cards-offers {
-    width: 100%;
+    // width: 100%;
     @include display-grid();
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2em;
