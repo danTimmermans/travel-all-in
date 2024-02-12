@@ -1,0 +1,68 @@
+.burger-btn {
+    background-color: transparent;
+    // border: none;
+    padding: map-get($spaces, 2 );
+    cursor: pointer;
+    @include border-radius();
+     div{
+        border: 2px solid color(black);
+        width: 25px;
+        margin: map-get($spaces , 1 ); ;
+    }
+}
+.main-title__btn{
+    @extend .btn;
+    @extend .btn-orange;
+    @include center();
+    width: 120px;
+    margin-top: space();
+}
+.reservations--btn{
+    @extend .btn;
+    @extend .btn-orange;
+    color: color("white");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.destination--btn{
+    @extend .btn;
+    @extend .btn-grey;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 2em;
+}
+.btn--wide{
+    width: 240px;
+}
+.promo--btn{
+    width: 120px;
+}
+.btn-full-width{
+    width: 100%;
+}
+.btn--red{
+    @extend .btn-red;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    padding: space(2);
+    @include border-radius();
+}
+// defini couleur avec effet hover
+@each $color, $value in $colors{
+    .btn-#{$color} {
+        background-color: $value;
+        &:hover {
+            @include mytrans(.5s);
+            background-color: scale-color($value, $alpha: -20%);
+        }
+    }
+}

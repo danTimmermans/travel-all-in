@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ttravel All In</title>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header id="mainHeader" class="pageHeaderHotels">
+        <div class="wrapper">
+            <div class="upper-nav">
+                <div class="upper-nav--commercial-links">
+                    <a href="contact.html">Visit Us</a>
+                    <a href="#">Buy Tickets</a>
+                </div>
+                <div class="upper-nav--social-nav">
+                    <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="http://www.dribbble.com"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="http://www.behance.com"><i class="fa-brands fa-behance"></i></i></a>
+                </div>
+            </div>
+            <div class="lower-nav">
+                <div class="nav-logo">
+                    <img src="img/all-in-logo-2-trsp.png" alt="logo Travel-All In" width="2481" height="650">
+                </div>
+                <nav id="wide-screen-nav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div id="mobile-screen-nav__menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="mobile-screen-nav">
+                <nav class="mobile-screen-nav--links">
+                    <a href="index.html">home</a>
+                    <a href="#">hotels</a>
+                    <a href="#">Blog</a>
+                    <a href="#">contact</a>
+                </nav>
+            </div>
+                <div class="main-title">
+                    <div class="main-title--content">
+                        <p>LOIN DE VOTRE VIE MONOTONE</p>
+                        <h1>TRAVEL ALL IN.</h1>
+                        <P>Evadez-vous de votre quotidien avec nos formules "all inclusives", pas de mauvaises surprises ni de suppléments, tout les prix sont fixés dès le départ.</P>
+                    </div>
+                    <a href="#" class="main-title__btn">GET STARTED</a>
+                </div>
+        </div>
+    </header>
+    <!-- modales -->
+    <!-- datepicker -->
+    <!-- <section class="wrapper">
+
+    </section> -->
+    <!-- section reservations et catalogue -->
+    <section id="reservations" class="wrapper">
+        <h2>Choisissez vos vacances de rêve</h2>
+        <!-- date de départ -->
+        <div class="reservation-container">
+          <button id="dateReservation" class="reservations--btn btn--wide"><i class="fa-solid fa-calendar-days"></i><span>Date de départ</span><i class="fa-solid fa-chevron-right"></i></button>
+          <div id="date-picker" class="date-picker-modal">
+            <div class="date-picker-container--data">
+              <div id="display">Date choisie :</div>
+              <input type="date" id="dateInput"/>
+            </div>
+            <div id="dateSaver" class="date-picker--btns">
+              <button class="reservations--btn date-picker-btn">effacer</button>
+              <button class="reservations--btn date-picker-btn">sauvegarder</button>
+            </div>
+          </div>
+        </div>
+        <!-- durée séjour -->
+        <div class="reservation-container">
+          <button id="HolidayDurationBtn" class="reservations--btn btn--wide"><i class="fa-regular fa-clock"></i><span>à.p. de 8 jours</span><i class="fa-solid fa-chevron-right"></i></button>
+          <div id="holiday-duration" class="holiday-duration-modal">
+            <fieldset class="date-picker-container--data">
+              <div class="holiday-duration-modal--checkbox"><input type="radio" id="one-week-duration" name="holiday-duration"/> 7 jours ou moins</div>
+              <div class="holiday-duration-modal--checkbox"><input type="radio" id="two-weeks-duration" name="holiday-duration"/> De 8 à 11 jours</div>
+              <div class="holiday-duration-modal--checkbox"><input type="radio"
+                id="three-week-duration" name="holiday-duration"/> De 12 à 16 jours</div>
+              <div class="holiday-duration-modal--checkbox"><input type="radio" id="four-week-duration" name="holiday-duration"/> De 17 à 29 jours</div>
+            </fieldset>
+            <div id="HolidayDurationSaverBtn" class="date-picker--btns">
+              <button class="reservations--btn date-picker-btn">effacer</button>
+              <button class="reservations--btn date-picker-btn">sauvegarder</button>
+            </div>
+          </div>
+        </div>
+        <!-- nombre de personnes -->
+        <div class="reservation-container">
+          <button id="number-of-people-btn" class="reservations--btn btn--wide"><i class="fa-solid fa-people-group"></i><span>2 personnes</span><i class="fa-solid fa-chevron-right"></i></button>
+          <div id="number-of-people" class="number-of-people-modal">
+            <fieldset class="date-picker-container--data">
+             <h3>Nombre de participants</h3>
+             <div class="number-of-people-modal--rooms">
+              <span>Ajouter une chambre</span>
+              <div class="number-of-people-modal--rooms__container">
+                <div class="decrease-rooms"><i class="fa-solid fa-minus"></i></div>
+                <div class="number-of-rooms">0</div>
+                <div class="increase-rooms"><i class="fa-solid fa-plus"></i></div>
+              </div>
+             </div>
+            </fieldset>
+            <div id="NumberOfPeopleSaverBtn" class="date-picker--btns">
+              <button class="reservations--btn date-picker-btn">effacer</button>
+              <button class="reservations--btn date-picker-btn">sauvegarder</button>
+            </div>
+          </div>
+        </div>
+        <div class="reservation-container">
+          <button id="destination-btn" class="reservations--btn btn--wide"><i class="fa-solid fa-location-pin"></i><span>Destination</span><i class="fa-solid fa-chevron-right"></i></button>
+          <div id="destinations" class="destinations-modal">
+            <button id="destination-btn" class="destination--btn btn--wide">
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <span>Europe</span>
+            </button>
+            <button href="#" class="destination--btn btn--wide">
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <span>Asie</span>
+            </button>
+            <button href="#" class="destination--btn btn--wide">
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <span>Afrique</span>
+            </button>
+            <button href="#" class="destination--btn btn--wide">
+              <i class="fa-solid fa-umbrella-beach"></i>
+              <span>Amérique</span>
+            </button>
+          </div>
+        </div>
+        <!-- résultats -->
+        <a href="#"><button class="reservations--btn btn--wide btn--red"><span>Affichez 1523 résultats</span><i class="fa-solid fa-chevron-right"></i></button></a>
+    </section>
+    <!-- section offres  -->
+    <section id="offres" class="wrapper">
+        <div class="cards-offers">
+            <div class="cards-offers--card cards-offers--card__premium">
+                <div class="cards-offers--card__content">
+                    <p>Offres de premières minutes</p>
+                    <a href="#"><button class=" reservations--btn promo--btn">J'en Profite</button></a>
+                </div>
+            </div>
+            <div class="cards-offers--card cards-offers--card__last-minute">
+                <div class="cards-offers--card__content">
+                    <p>Réservation last minute</p>
+                    <a href="#"><button class="reservations--btn promo--btn">Je fonce</button></a>
+                </div>
+            </div>
+            <div class="cards-offers--card cards-offers--card__romance">
+                <div class="cards-offers--card__content">
+                    <p>Escapades Romantiques</p>
+                    <a href="#"><button class="reservations--btn promo--btn">J'en Profite</button></a>
+                </div>
+            </div>
+            <div class="cards-offers--card cards-offers--card__detente">
+                <div class="cards-offers--card__content">
+                    <p>Offres détentes</p>
+                    <a href="#"><button class="reservations--btn promo--btn">Voir l'offre</button></a>
+                </div>
+            </div>
+            <div class="cards-offers--card cards-offers--card__croisiere">
+                <div class="cards-offers--card__content">
+                    <p>Croisières All In</p>
+                    <a href="#"><button class="reservations--btn promo--btn">Je fonce</button></a>
+                </div>
+            </div>
+            <div class="cards-offers--card cards-offers--card__food">
+                <div class="cards-offers--card__content">
+                    <p>Découvertes gastrnomiques</p>
+                    <a href="#"><button class="reservations--btn promo--btn">Voir l'offre</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section météo -->
+    <section id="meteo" class="wrapper">
+        <div class="meteo">
+            <div class="meteo-content">
+                <h2>La météo de nos destinations soleil en temps réel</h2>
+                <div class="meteo-ville">
+                    <span id="ville"></span>
+                    <div>
+                        <span>:</span>
+                        <span id="temperature_label">
+                                xx.x
+                        </span>
+                        <span>°C</span>
+                    </div>
+                </div>
+                <div id="icone"></div>
+            </div>
+        </div>
+    </section>
+<!--  section prix abordables-->
+    <section id="affordable-prices">
+        <div class="affordable-prices--title wrapper">
+            <h2>Nous offrons des prix abordables</h2>
+            <p>Les prix All Inclusives de nos meilleures destinations sont toujours calculés au meilleur prix.</p>
+        </div>
+            <div class="affordable-prices--packages--cards wrapper">
+                <div class="affordable-prices--packages ">
+                        <h3>Camping Packages</h3>
+                        <div class="prices">
+                            <span>São Paulo</span>
+                            <a href="#">$500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Maldives</span>
+                            <a href="#">$500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Sri Lanka</span>
+                            <a href="#">$500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Puerto rico</span>
+                            <a href="#">$500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Thailand</span>
+                            <a href="#">$500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Singapore</span>
+                            <a href="#">$500</a>
+                        </div>
+                </div>
+                <div class="affordable-prices--packages ">
+                        <h3>Luxury Packages</h3>
+                        <div class="prices">
+                            <span>São Paulo</span>
+                            <a href="#">$2500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Maldives</span>
+                            <a href="#">$2500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Sri Lanka</span>
+                            <a href="#">$2500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Puerto rico</span>
+                            <a href="#">$2500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Thailand</span>
+                            <a href="#">$2500</a>
+                        </div>
+                        <div class="prices">
+                            <span>Singapore</span>
+                            <a href="#">$2500</a>
+                        </div>
+                </div>
+                <div class="affordable-prices--packages ">
+                        <h3>Cheap Packages</h3>
+                        <div class="prices">
+                            <span>São Paulo</span>
+                            <a href="#">$950</a>
+                        </div>
+                        <div class="prices">
+                            <span>maldives</span>
+                            <a href="#">$950</a>
+                        </div>
+                        <div class="prices">
+                            <span>Sri Lanka</span>
+                            <a href="#">$950</a>
+                        </div>
+                        <div class="prices">
+                            <span>Puerto rico</span>
+                            <a href="#">$950</a>
+                        </div>
+                        <div class="prices">
+                            <span>Thailand</span>
+                            <a href="#">$950</a>
+                        </div>
+                        <div class="prices">
+                            <span>Singapore</span>
+                            <a href="#">$950</a>
+                        </div>
+                </div>
+            </div>
+    </section>
+    <!-- section meilleurs hotels -->
+    <section id="hotels" class="wrapper">
+        <div class="hotels-cards las-palmeras">
+            <div class="hotel-card las-palmeras">
+                <div class="logo-hotels">
+                    <img src="img/logo-travel-in-transparent-2.png" alt="logo travel all in" width="1964" height="659" >
+                </div>
+                <div class="hotel--promo-content">
+                    <h3>Las Palmeras</h3>
+                    <div class="hotel--promo-text">
+                        <div class="hotel--stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>Navette comprise</span>
+                    </div>
+                    <div class="hotel--promo-price">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>A partir de 500 euros</span>                        
+                    </div>
+                    <div class="hotel--promo-btn-reservation">
+                        <span>-réductions pour réservation anticipée</span>
+                        <a href="#"><button class="reservations--btn hotel--btn btn-full-width"><span>Réservez</span><i class="fa-solid fa-chevron-right"></i></button></a>
+                    </div>                 
+                </div>
+            </div>
+            <div class="hotel-card cosmos">
+                <div class="logo-hotels">
+                    <img src="img/logo-travel-in-transparent-2.png" alt="logo travel all in" width="1964" height="659" >
+                </div>
+                <div class="hotel--promo-content">
+                    <h3>Hotel Cosmos</h3>
+                    <div class="hotel--promo-text">
+                        <div class="hotel--stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>Navette comprise</span>
+                    </div>
+                    <div class="hotel--promo-price">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>A partir de 650 euros</span>                        
+                    </div>
+                    <div class="hotel--promo-btn-reservation">
+                        <span>-réductions pour réservation anticipée</span>
+                        <a href="#"><button class="reservations--btn hotel--btn btn-full-width"><span>Réservez</span><i class="fa-solid fa-chevron-right"></i></button></a>
+                    </div>                 
+                </div>
+            </div>
+            <div class="hotel-card plage">
+                <div class="logo-hotels">
+                    <img src="img/logo-travel-in-transparent-2.png" alt="logo travel all in" width="1964" height="659" >
+                </div>
+                <div class="hotel--promo-content">
+                    <h3>Hotel de la Plage</h3>
+                    <div class="hotel--promo-text">
+                        <div class="hotel--stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>Navette comprise</span>
+                    </div>
+                    <div class="hotel--promo-price">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>A partir de 400 euros</span>                        
+                    </div>
+                    <div class="hotel--promo-btn-reservation">
+                        <span>-réductions pour réservation anticipée</span>
+                        <a href="#"><button class="reservations--btn hotel--btn btn-full-width"><span>Réservez</span><i class="fa-solid fa-chevron-right"></i></button></a>
+                    </div>                 
+                </div>
+            </div>
+            <div class="hotel-card cancun">
+                <div class="logo-hotels">
+                    <img src="img/logo-travel-in-transparent-2.png" alt="logo travel all in" width="1964" height="659" >
+                </div>
+                <div class="hotel--promo-content ">
+                    <h3>fhloston paradise</h3>
+                    <div class="hotel--promo-text">
+                        <div class="hotel--stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span>Navette comprise</span>
+                    </div>
+                    <div class="hotel--promo-price">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>A partir de 850 euros</span>                        
+                    </div>
+                    <div class="hotel--promo-btn-reservation">
+                        <span>-réductions pour réservation anticipée</span>
+                        <a href="#"><button class="reservations--btn hotel--btn btn-full-width"><span>Réservez</span><i class="fa-solid fa-chevron-right"></i></button></a>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section testimonial -->
+    <section id="testimonial" class="wrapper">
+      <h2>Les avis de nos clients</h2>
+        <div class="vertical-marquee">
+            <div class="vertical-marquee__blurred-circle"></div>
+            <div
+              class="vertical-marquee__blurred vertical-marquee__blurred--top"
+            ></div>
+            <div
+              class="vertical-marquee__blurred vertical-marquee__blurred--bottom"
+            ></div>
+            <div class="vertical-marquee__slider">
+              <div class="vertical-marquee__panel vertical-marquee__panel-1">
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Une expérience de voyage inoubliable ! Leur équipe a pris soin de chaque détail pour rendre notre voyage parfait.<span class="vertical-marquee__green-quotes">"</span>
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c1.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Marie Dubois.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Je recommande vivement l'agence Travel-All-In ! Leur expertise et leur professionnalisme ont surpassé mes attentes.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Lucas Durand.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Un service client exceptionnel ! L'agence Travel-All-In a été attentive à nos besoins et a créé un itinéraire sur mesure pour nous.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c6.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Camille Rousseau.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des vacances de rêve grâce à l'agence Travel-All-In ! Leur connaissance approfondie des destinations a rendu notre voyage magique<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c3.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Léa Dupont.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Un grand merci à toute l'équipe de l'agence Travel-All-In pour ce voyage mémorable ! Leurs recommandations ont été parfaites<span class="vertical-marquee__green-quotes">"</span>
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c5.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Nicolas Dupuis.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Je suis impressionné par la qualité des services proposés par l'agence Travel-All-In. Ils ont vraiment su rendre notre séjour extraordinaire.<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Mathis Fernandez.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des guides compétents et des hébergements de qualité recommandés par l'agence Travel-All-In. Je n'hésiterai pas à faire appel à eux pour mes prochains voyages<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c4.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Margot Petit.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Une organisation sans faille de la part de l'agence Travel-All-In ! Tout s'est déroulé parfaitement, du début à la fin.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c1.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Juliette Moreau.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Une expérience de voyage fluide et sans stress grâce à l'agence Travel-All-In. Ils ont surpassé toutes mes attentes.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Nathan Renard.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des souvenirs incroyables grâce à l'agence Travel-All-In. Je les recommande à tous ceux qui recherchent une expérience authentique.<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c3.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Clara Laurent.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span
+                    >Des conseils avisés et un service personnalisé de la part de l'agence Travel-All-In. Ils ont su répondre à toutes mes demandes avec professionnalisme.<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c5.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Maxime Martinez.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Un service client attentionné et des réponses rapides à toutes mes questions de la part de l'agence Travel-All-In. Je suis entièrement satisfait de mon expérience avec eux.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c6.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Alice Thomas.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="vertical-marquee__panel vertical-marquee__panel-2">
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des destinations époustouflantes et des activités uniques recommandées par l'agence Travel-All-In. Un voyage inoubliable garanti !<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Thomas Garcia.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Un voyage parfaitement organisé grâce à l'agence Travel-All-In ! Ils ont anticipé tous nos besoins et ont rendu notre expérience de voyage sans souci.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c1.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Sophie Bernard.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Je suis enchanté par la qualité des services proposés par l'agence Travel-All-In. Leur attention aux détails a vraiment fait la différence.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c1.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Sophie Bernard.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des guides passionnés et des excursions bien planifiées recommandées par l'agence Travel-All-In. Ils nous ont permis de découvrir chaque destination de manière authentique.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c5.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Hugo Leroy.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Une agence de voyage digne de confiance ! L'agence Travel-All-In a fait preuve d'un professionnalisme exemplaire.<span class="vertical-marquee__green-quotes">"</span>
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c3.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Emma Girard.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Une expérience de voyage exceptionnelle grâce à l'agence Travel-All-In ! Je leur suis reconnaissant d'avoir rendu nos vacances si spéciales<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c5.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Antoine Simon</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des recommandations judicieuses et des itinéraires bien pensés de la part de l'agence Travel-All-In. Ils nous ont permis de vivre des moments uniques lors de notre voyage.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Romain Mercier.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Un service client attentionné et des conseils précieux de la part de l'agence Travel-All-In. Je suis très satisfait de mon expérience avec eux.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c5.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Louis Robin.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Une équipe compétente et des prestations de qualité de la part de l'agence Travel-All-In. Je recommande vivement pour un voyage sans souci.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Baptiste Chevalier.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Des souvenirs inoubliables grâce à l'agence Travel-All-In. Leur expertise a vraiment enrichi notre expérience de voyage.<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c1.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Anaïs Lefevre.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span
+                    >Une agence fiable et professionnelle. L'attention aux détails de l'agence Travel-All-In a vraiment fait la différence dans la planification de notre voyage<span class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c2.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Jules Caron.</p>
+                  </div>
+                </div>
+                <div class="vertical-marquee__card">
+                  <p class="vertical-marquee__card-text">
+                    <span class="vertical-marquee__green-quotes">"</span>Un service exceptionnel du début à la fin ! L'agence Travel-All-In a su répondre à toutes nos attentes et a rendu notre voyage mémorable.<span
+                      class="vertical-marquee__green-quotes"
+                      >"</span
+                    >
+                  </p>
+                  <div class="vertical-marquee__card-author-and-pic">
+                    <div class="vertical-marquee__pic">
+                      <img src="img/all-pics/c4.jpg" alt="photo de client">
+                    </div>
+                    <p class="vertical-marquee__card-author">Manon Lambert.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- sectionblog -->
+    <section id="blog" class="wrapper">
+      <h2>Nos derniers articles de blog</h2>
+      <p>Explorez, rêvez, voyagez ! Découvrez des destinations inspirantes et des conseils pratiques pour des aventures inoubliables.</p>
+      <div class="blog-container-cards">
+        <div class="blog-container-card">
+          <div class="blog-container-pic">
+            <img src="img/all-pics/b2.jpg" alt="photo de blog">
+          </div>
+          <div class="blog-container__btn-tag">
+            <a href="#"><button class="reservations--btn promo--btn">Travel</button></a>
+            <a href="#"><button class="reservations--btn promo--btn">life style</button></a>
+          </div>
+          <div class="blog-container__advertising-container">
+            <h3>Activités créatives en extérieur</h3>
+            <p>Bienvenue sur notre blog dédié aux activités créatives en plein air, où l'aventure rencontre l'expression artistique ! Que vous soyez...</p>
+          </div>
+        </div>
+        <div class="blog-container-card">
+          <div class="blog-container-pic">
+            <img src="img/all-pics/b1.jpg" alt="photo de blog">
+          </div>
+          <div class="blog-container__btn-tag">
+            <a href="#"><button class="reservations--btn promo--btn">Travel</button></a>
+            <a href="#"><button class="reservations--btn promo--btn">life style</button></a>
+          </div>
+          <div class="blog-container__advertising-container">
+            <h3>Aventures Low Cost</h3>
+            <p>En quête de l'aventure sans vider votre compte en banque ? Les vacances low cost pourraient bien être la solution idéale pour vous ! Oubliez l'idée reçue selon laquelle...</p>
+          </div>
+        </div>
+        <div class="blog-container-card">
+          <div class="blog-container-pic">
+            <img src="img/all-pics/b3.jpg" alt="photo de blog">
+          </div>
+          <div class="blog-container__btn-tag">
+            <a href="#"><button class="reservations--btn promo--btn">Travel</button></a>
+            <a href="#"><button class="reservations--btn promo--btn">life style</button></a>
+          </div>
+          <div class="blog-container__advertising-container">
+            <h3>Vacances tout compris</h3>
+            <p>Vous rêvez de vacances sans tracas, où chaque détail est pris en charge pour vous permettre de vous détendre et de profiter pleinement de chaque instant ? Les vacances tout compris sont la solution...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="main-footer">
+      <div class="footer-wrapper">
+          <div class="footer-wrapper__item-a">
+              <h3>A propos de notre agence</h3>
+              <p>
+                Explorez le monde avec Travel All-In, votre partenaire de confiance pour des expériences inoubliables. Nous sommes une équipe passionnée dédiée à vous faire découvrir les trésors cachés de chaque destination.</p>
+          </div>
+          <div class="footer-wrapper__item-b">
+              <h3>Menu de navigation</h3>
+              <nav>
+                  <a href="index.html">Home</a>
+                  <a href="#">Feature</a>
+                  <a href="#">Services</a>
+                  <a href="#">Portfolio</a>
+              </nav>
+              <nav>
+                  <a href="index.html">Home</a>
+                  <a href="#">Feature</a>
+                  <a href="#">Services</a>
+                  <a href="#">Portfolio</a>
+              </nav>
+          </div>
+          <div class="footer-wrapper__item-c">
+              <h3>newsletter</h3>
+              <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
+              <div class="footer__input_cell">
+                  <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+                  <i class="fa-solid fa-paper-plane"></i>
+              </div>
+          </div>
+          <div class="footer-wrapper__item-d">
+              <h3>instafeed</h3>
+              <div class="footer__mini-gallery">
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i1.jpg" alt="kid"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i2.jpg" alt="chalet"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i3.jpg" alt="kid"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i4.jpg" alt="taj-mahal"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i5.jpg" alt="travel"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i6.jpg" alt="sunset"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i7.jpg" alt="chill"></a>
+                  </div>
+                  <div>
+                      <a href="www.instagram.com"><img src="img/all-pics/i8.jpg" alt="kid"></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom footer-wrapper__item-e">
+              <div class="copyright">
+                  <p>Copyright © 2024 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by Travelweb</p>
+              </div>
+              <div class="go-social">
+                  <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="http://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="http://www.dribbble.com"><i class="fa-brands fa-dribbble"></i></a>
+                  <a href="http://www.behance.com"><i class="fa-brands fa-behance"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
