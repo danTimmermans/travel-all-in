@@ -1,6 +1,6 @@
 #mainHeader{
     background: url('../img/all-pics/hero-hotels.jpg') center/cover;
-    height: 100vh;
+    height: 80vh;
     padding-top: 80px;
     position: relative;
     &::before{
@@ -19,7 +19,7 @@
 }
 .main-title{
     color: color('white');
-    margin-top: 120px;
+    margin-top: 80px;
     @include display-flex();
     flex-direction: column;
     justify-content: center;
