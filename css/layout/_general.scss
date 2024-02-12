@@ -126,7 +126,7 @@ a {
 // section offres
 #offres {
   .cards-offers {
-    width: 100%;
+    width: 90%;
     @include display-grid();
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2em;
