@@ -155,9 +155,8 @@ NumberOfPeopleSaverBtn.addEventListener('click', closeNumberOfPeopleModal);
 
 
 let destinationModal = document.querySelector('.destinations-modal');
-console.log(destinationModal);
 let destinationBtn = document.querySelector('#destination-btn');
-console.log(destinationBtn);
+
 
 let showDestinationModal = () =>{
     destinationModal.classList.add('date-picker-visible');
