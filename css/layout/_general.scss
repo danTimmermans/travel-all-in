@@ -33,19 +33,15 @@ a {
   h2{
     text-align: center;
   }
+  @include media-breakpoint-up("lg"){
+    width: 80%
+}
 }
 // section reservation
 #reservations {
   @include display-flex();
   flex-direction: column;
   gap: 1.5em;
-
-  //   @include media-breakpoint-up("lg") {
-  //     @include display-grid();
-  //     grid-template-columns: 1fr 1fr;
-  //     grid-template-rows: 1fr 1fr;
-  //     gap: 1em;
-  //   }
   .reservation-container {
     position: relative;
   }
@@ -141,6 +137,13 @@ a {
     @include display-grid();
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2em;
+    @include media-breakpoint-up("lg"){
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
+    }
+    @include media-breakpoint-up("xl"){
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));    
+    }
+
   }
   .cards-offers--card {
     &::before {
@@ -474,6 +477,9 @@ a {
 }
 // section blog
 #blog {
+  a{
+  color: color("dark");
+  }
   p {
     text-align: left;
   }

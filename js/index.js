@@ -60,12 +60,6 @@ function recevoirTemperature(ville){
                     document.querySelector('#ville').textContent = ville;
                     document.querySelector('#temperature_label').textContent = temperature;
 
-                    // let latitude = reponse.coord.lat;
-                    // document.querySelector('#coordonnee_latitude_label').textContent = latitude;
-                    // let longitude = reponse.coord.lon;
-                    // document.querySelector('#coordonnee_longitude_label').textContent = longitude;
-
-
                     let icone = reponse.weather[0].icon;
                     imgUrl = `https://openweathermap.org/img/wn/${icone}@2x.png`
                     let img = document.createElement('img');
