@@ -80,13 +80,16 @@ function recevoirTemperature(ville){
             }
         }
 }
-
+// modales section réservation
 // date picker
 const datePicker = document.querySelector('.date-picker-modal');
 const reservationBtn = document.querySelector('#dateReservation');
-const closePickerModalBtn = document.querySelector('#dateSaver')
+const closePickerModalBtn = document.querySelector('#dateSaver');
 
 let showDatePicker = () =>{
+    closeHolidayDurationOption();
+    closeNumberOfPeopleModal();
+    closeDestinationModal();
     datePicker.classList.add('date-picker-visible');
 }
 reservationBtn.addEventListener('click', showDatePicker);
@@ -109,6 +112,8 @@ const HolidayReservationBtn = document.querySelector('#HolidayDurationBtn');
 const HolidayDurationSaverBtn = document.querySelector('#HolidayDurationSaverBtn');
 
 let showHolidayDurationOption = () =>{
+    closeNumberOfPeopleModal();
+    closeDestinationModal();
     HolidayDuration.classList.add('date-picker-visible');
 }
 HolidayReservationBtn.addEventListener('click', showHolidayDurationOption);
@@ -144,6 +149,7 @@ let NumberOfPeopleBtn = document.querySelector('#number-of-people-btn');
 let NumberOfPeopleSaverBtn = document.querySelector('#NumberOfPeopleSaverBtn')
 
 let showNumberOfPeopleModal = () =>{
+    closeDestinationModal();
     numberOfPeopleModal.classList.add('date-picker-visible');
 }
 NumberOfPeopleBtn.addEventListener('click',  showNumberOfPeopleModal);

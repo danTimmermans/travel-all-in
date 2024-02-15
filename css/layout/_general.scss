@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,9 @@ a {
   align-items: center;
   position: relative;
   margin-bottom: 80px;
+  h2{
+    text-align: center;
+  }
 }
 // section reservation
 #reservations {
@@ -155,25 +158,28 @@ a {
       flex-direction: column;
       align-items: center;
       gap: 1.5em;
+      p{
+        text-align: center;
+      }
     }
   }
   .cards-offers--card__premium {
-    background: url("../img/all-pics/d1.jpg") center/cover;
+    background: url("../img/webp/d1.webp") center/cover;
   }
   .cards-offers--card__last-minute {
-    background: url("../img/all-pics/b2.jpg") center/cover;
+    background: url("../img/webp/b2.webp") center/cover;
   }
   .cards-offers--card__romance {
-    background: url("../img/blog/feature-img3.jpg") center/cover;
+    background: url("../img/webp/feature-img3.webp") center/cover;
   }
   .cards-offers--card__detente {
-    background: url("../img/all-pics/o1.jpg") center/cover;
+    background: url("../img/webp/o1.webp") center/cover;
   }
   .cards-offers--card__croisiere {
-    background: url("../img/all-pics/o2.jpg") center/cover;
+    background: url("../img/webp/o2.webp") center/cover;
   }
   .cards-offers--card__food {
-    background: url("../img/all-pics/o4.jpg") center/cover;
+    background: url("../img/webp/o4.webp") center/cover;
   }
 }
 // section météo
@@ -182,7 +188,7 @@ a {
   border: 2px solid color("grey");
   @include border-radius();
   @include padding("all");
-  background: url("../img/hotels/d1.jpg") center/cover;
+  background: url("../img/webp/meteo.webp") center/cover;
   max-width: 550px;
   &::before {
     position: absolute;
@@ -197,6 +203,9 @@ a {
     color: color("white");
     position: relative;
     z-index: 100;
+    h2{
+      text-align: left;
+    }
   }
   .meteo-ville {
     @include display-flex();
@@ -221,7 +230,7 @@ a {
 .affordable-prices--title {
   padding-top: 2em;
   p {
-    text-align: center;
+    text-align: left;
   }
 }
 #affordable-prices {
@@ -285,7 +294,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
   .las-palmeras {
-    background: url("../img/all-pics/hero-hotels.jpg") center/cover;
+    background: url("../img/webp/hero-hotels.webp") center/cover;
   }
   .cosmos {
     background: url("../img/all-pics/hero-bg.jpg") center/cover;
@@ -458,7 +467,7 @@ a {
 // section blog
 #blog {
   p {
-    text-align: center;
+    text-align: left;
   }
 
   .blog-container-card {
