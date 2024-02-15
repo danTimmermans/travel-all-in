@@ -98,12 +98,19 @@ a {
   }
   // nombre de participants
   .number-of-people-modal {
+    padding: 0 7px;
+
     h3 {
       font-weight: bold;
       padding: 7px 0;
+      text-align: center;
     }
     .number-of-people-modal--rooms {
       padding: 7px;
+      span{
+        display: block;
+        text-align: center;
+      }
     }
 
     .number-of-people-modal--rooms__container {
