@@ -31,6 +31,19 @@
             line-height: 1.5em;
         }
     }
+    @include media-breakpoint-up("lg"){
+        margin-top: 160px;
+        .main-title__btn{
+            margin-top: 40px;
+            font-size: font-size("lg");
+        }
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: font-size("xl");
+        }
+    }
 }
 .pageTitle{
     height: 20vh;

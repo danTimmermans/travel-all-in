@@ -14,6 +14,18 @@
     width: 50%;
     @include display-flex();
     justify-content: space-between;
+    @include media-breakpoint-up("md"){
+    width: 30%;
+    }
+    @include media-breakpoint-up("lg"){
+    width: 25%;
+    }
+    @include media-breakpoint-up("xl"){
+    width: 20%;
+    }
+    @include media-breakpoint-up("xxl"){
+    width: 15%;
+    }
 }
 .upper-nav--social-nav{
     a{
